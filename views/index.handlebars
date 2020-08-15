@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="row">
+    <div class="col s6 offset-s3">
+      <img src="https://media.giphy.com/media/iIwdE2XoD53ihH7LKY/giphy_s.gif"
+        data-still="https://media.giphy.com/media/iIwdE2XoD53ihH7LKY/giphy_s.gif"
+        data-animate="https://media.giphy.com/media/iIwdE2XoD53ihH7LKY/giphy.gif" data-state="still" class="gif">
+      <h2>Eat Da Burger!</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s6">
+      <ul class="collection with-header">
+        <li class="collection-header">
+          <h5>Burgers To Devour</h5>
+        </li>
+
+        {{#each burgers}}
+        {{#unless devoured}}
+        <li class="collection-item">
+          <div>
+            {{this.id}}. {{this.burger_name}}
+          </div>
+          <button class="btn waves-effect waves-light btn-small blue lighten-2" data-burgerId="{{this.id}}"
+            class="delBurger">Devour It</button>
+        </li>
+        {{/unless}}
+        {{/each}}
+
+      </ul>
+    </div>
+    <div class="col s6">
+      <ul class="collection with-header">
+        <li class="collection-header">
+          <h5>Devoured Burgers!</h5>
+        </li>
+        <li class="collection-item">
+          <div>Alvin</div>
+        </li>
+
+        <!-- {{#each burgers_devoured}}
+          <li class="collection-item">
+            <div>{{this.id}}. {{this.movie}}</div>
+          </li>
+          {{/each}} -->
+
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s6 offset-s3">
+      <form id="addBurger" class="button-size">
+        <textarea class="input" type="text" name="burger"></textarea>
+        <button class="btn waves-effect waves-light blue darken-1" type="submit" name="action">Submit</button>
+      </form>
+      <p>Enter the name of the burger you want to eat and click the SUMBIT button</p>
+    </div>
+  </div>
+</div>
