@@ -1,0 +1,34 @@
+body {
+  background-color: #fae3d9;
+  align-content: center;
+  font-family: 'Roboto', sans-serif;
+  color: #6c737e;
+}
+
+.gif {
+  height: 270px;
+  width: 270px;
+}
+
+h2 {
+  color: #5fbdb0;
+  font-family: 'Sriracha', cursive;
+  margin: 0;
+}
+
+.input {
+  background-color: white;
+  height: 80px;
+}
+
+.container {
+  margin-top:auto;
+  margin-bottom:auto;
+  text-align:center;
+}
+
+.collection-item {
+  display: flex;
+  justify-content: space-between;
+  height: 52.4px;
+}
