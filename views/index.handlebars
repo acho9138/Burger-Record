@@ -33,15 +33,14 @@
         <li class="collection-header">
           <h5>Devoured Burgers!</h5>
         </li>
-        <li class="collection-item">
-          <div>Alvin</div>
-        </li>
 
-        <!-- {{#each burgers_devoured}}
-          <li class="collection-item">
-            <div>{{this.id}}. {{this.movie}}</div>
-          </li>
-          {{/each}} -->
+        {{#each burgers}}
+        {{#if devoured}}
+        <li class="collection-item">
+          <div>{{this.id}}. {{this.burger_name}}</div>
+        </li>
+        {{/if}}
+        {{/each}}
 
       </ul>
     </div>
