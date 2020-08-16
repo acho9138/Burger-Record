@@ -8,7 +8,7 @@ $(() => {
       setTimeout(() => {
         $(".gif").attr("src", $(".gif").attr("data-still"));
         $(".gif").attr("data-state", "still");
-      }, 2200)
+      }, 750)
     }
   }
 
